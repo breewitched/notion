@@ -1,0 +1,3 @@
+```jsx
+(prop("Completed") / prop("Goal") >= 1) ? "✅" : (and(empty(prop("Completed")), not empty(prop("Goal"))) ? "0%" : format(slice("✦✦✦✦✦✦✦✦✦✦", 0, floor(prop("Completed") / prop("Goal") * 10)) + " " + format(round(prop("Completed") / prop("Goal") * 100)) + "%"))
+```
